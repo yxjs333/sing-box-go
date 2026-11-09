@@ -3,7 +3,7 @@
 #
 # 用法:
 #   1) 默认部署 (DEFAULT_ARGS 指定的标准节点集):
-#      curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/install.sh | sudo bash
+#      curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/install.sh | sudo bash
 #      # 或显式写 default:
 #      curl -fsSL .../install.sh | sudo bash -s -- default
 #
@@ -21,7 +21,7 @@
 # 改默认行为: 编辑下面 DEFAULT_ARGS / DEFAULT_<协议> 后推 git。
 set -euo pipefail
 
-REPO_BASE="https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main"
+REPO_BASE="https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main"
 TARGET="/root/auto-deploy.sh"
 
 # ============ 默认部署 (不带参数 / default 时使用) ============

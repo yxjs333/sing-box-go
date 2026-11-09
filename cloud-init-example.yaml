@@ -5,10 +5,10 @@
 
 runcmd:
   # 方式 A: 一条命令, 用 install.sh 内置默认参数部署
-  - curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/install.sh | bash
+  - curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/install.sh | bash
 
   # 方式 B: 覆盖部分参数 (二选一, 把 A 注释掉)
-  # - curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/install.sh | bash -s -- --reality-port 8443 --reality-sni www.apple.com
+  # - curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/install.sh | bash -s -- --reality-port 8443 --reality-sni www.apple.com
 
   # 查看结果 (完整日志在 /var/log/cloud-init-output.log)
   - cat /etc/sing-box/nodes.txt

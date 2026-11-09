@@ -62,7 +62,7 @@ DIRECT_RPORT|direct-rport|
 ENABLE_BBR|enable-bbr|true
 OPEN_FIREWALL|open-firewall|true
 INSTALL_MGMT|install-mgmt|true
-MGMT_URL|mgmt-url|https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/mgmt-code.tar.gz
+MGMT_URL|mgmt-url|https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/mgmt-code.tar.gz
 MGMT_SHA256_URL|mgmt-sha256-url|
 DRY_RUN|dry-run|false
 FORCE|force|false

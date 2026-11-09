@@ -17,10 +17,10 @@
 
 ```bash
 # 方式一：一键部署（推荐，install.sh 会下载 auto-deploy.sh 并用内置默认参数部署）
-curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/install.sh | sudo bash
 
 # 方式二：手动两步（想先看参数/预演时用）
-curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/auto-deploy.sh -o /root/auto-deploy.sh
+curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/auto-deploy.sh -o /root/auto-deploy.sh
 chmod +x /root/auto-deploy.sh
 /root/auto-deploy.sh --dry-run   # 先预演（推荐）
 /root/auto-deploy.sh --protocols reality,hy2,anytls,vmesstcp
@@ -174,7 +174,7 @@ DOWNLOAD_PROXY=https://gh-proxy.com/ ./auto-deploy.sh
 #cloud-config
 runcmd:
   # 默认参数一键部署（runcmd 已是 root，不需要 sudo）
-  - curl -fsSL https://raw.githubusercontent.com/kungwu222/sing-box-go/refs/heads/main/install.sh | bash
+  - curl -fsSL https://raw.githubusercontent.com/yxjs333/sing-box-go/refs/heads/main/install.sh | bash
   # 覆盖参数（把上面注释掉）：
   # - curl -fsSL .../install.sh | bash -s -- --reality-port 8443
   - cat /etc/sing-box/nodes.txt
